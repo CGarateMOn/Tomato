@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Progress</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="app">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h1 class="logo">TrainTrack</h1>
+        <nav>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="catalog.html">My Trainings</a>
+          <a href="progress.html" class="active">Progress</a>
+          <a href="#">Settings</a>
+        </nav>
+      </aside>
+
+      <!-- Main content -->
+      <main class="main">
+
+        <header class="topbar">
+          <h2>My Progress</h2>
+          <p>A full record of your training activity.</p>
+        </header>
+
+        <!-- Stats row -->
+        <div class="summary-row">
+
+          <div class="summary-card">
+            <span class="summary-number">48%</span>
+            <span class="summary-label">Overall Completion</span>
+          </div>
+
+          <div class="summary-card">
+            <span class="summary-number">1</span>
+            <span class="summary-label">Trainings Completed</span>
+          </div>
+
+          <div class="summary-card">
+            <span class="summary-number">9</span>
+            <span class="summary-label">Modules Done</span>
+          </div>
+
+          <div class="summary-card">
+            <span class="summary-number">1</span>
+            <span class="summary-label">Certificates Earned</span>
+          </div>
+
+        </div>
+
+        <!-- Progress by training -->
+        <section class="progress-section">
+
+          <h3 class="section-title">Progress by Training</h3>
+
+          <div class="progress-list">
+
+            <div class="progress-row">
+              <span class="progress-row-label">STM 32 fundamentals</span>
+              <div class="progress-bar">
+                <div class="progress-fill progress-fill--completed" style="width: 100%"></div>
+              </div>
+              <span class="progress-row-percent">100%</span>
+            </div>
+
+            <div class="progress-row">
+              <span class="progress-row-label">CAN fundamentals</span>
+              <div class="progress-bar">
+                <div class="progress-fill progress-fill--progress" style="width: 50%"></div>
+              </div>
+              <span class="progress-row-percent">50%</span>
+            </div>
+
+            <div class="progress-row">
+              <span class="progress-row-label">Integration circuits fundamentals</span>
+              <div class="progress-bar">
+                <div class="progress-fill progress-fill--progress" style="width: 40%"></div>
+              </div>
+              <span class="progress-row-percent">40%</span>
+            </div>
+
+            <div class="progress-row">
+              <span class="progress-row-label">ROS 2 fundamentals</span>
+              <div class="progress-bar">
+                <div class="progress-fill progress-fill--notstarted" style="width: 0%"></div>
+              </div>
+              <span class="progress-row-percent">0%</span>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- Completion history table -->
+        <section class="progress-section">
+
+          <h3 class="section-title">Completion History</h3>
+
+          <table class="history-table">
+            <thead>
+              <tr>
+                <th>Training</th>
+                <th>Module</th>
+                <th>Resource</th>
+                <th>Date Completed</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>STM 32 fundamentals</td>
+                <td>Module 1</td>
+                <td>Theory</td>
+                <td>Jan 3, 2025</td>
+                <td><span class="badge badge--completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>STM 32 fundamentals</td>
+                <td>Module 2</td>
+                <td>Theory</td>
+                <td>Jan 5, 2025</td>
+                <td><span class="badge badge--completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>STM 32 fundamentals</td>
+                <td>Module 3</td>
+                <td>Theory</td>
+                <td>Jan 7, 2025</td>
+                <td><span class="badge badge--completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>STM 32 fundamentals</td>
+                <td>Module 4</td>
+                <td>Theory</td>
+                <td>Jan 10, 2025</td>
+                <td><span class="badge badge--completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>CAN fundamentals</td>
+                <td>Module 1</td>
+                <td>Theory</td>
+                <td>Jan 15, 2025</td>
+                <td><span class="badge badge--completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>CAN fundamentals</td>
+                <td>Module 2</td>
+                <td>Theory</td>
+                <td>Jan 18, 2025</td>
+                <td><span class="badge badge--completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>CAN fundamentals</td>
+                <td>Module 3</td>
+                <td>Theory</td>
+                <td>Jan 20, 2025</td>
+                <td><span class="badge badge--completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>Integration circuits fundamentals</td>
+                <td>Module 1</td>
+                <td>Theory</td>
+                <td>Jan 22, 2025</td>
+                <td><span class="badge badge--completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>Integration circuits fundamentals</td>
+                <td>Module 2</td>
+                <td>Theory</td>
+                <td>Jan 25, 2025</td>
+                <td><span class="badge badge--completed">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+
+      </main>
+    </div>
+
+  </body>
+</html>

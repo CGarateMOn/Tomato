@@ -67,3 +67,102 @@ nav a:hover {
   color: #555;
   font-size: 15px;
 }
+/* ── Summary row ── */
+.summary-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.summary-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.summary-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1a2e4a;
+}
+
+.summary-label {
+  font-size: 13px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Training cards ── */
+.training-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.training-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.training-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.training-header h3 {
+  font-size: 17px;
+  color: #1a1a1a;
+}
+
+.training-meta {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+/* ── Badges ── */
+.badge {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-weight: 600;
+}
+
+.badge--completed {
+  background-color: #e6f4ea;
+  color: #2d7a3a;
+}
+
+.badge--progress {
+  background-color: #fff4e0;
+  color: #a06000;
+}
+
+.badge--notstarted {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+/* ── Progress bar ── */
+.progress-bar {
+  height: 6px;
+  background-color: #ebebeb;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #1a2e4a;
+  border-radius: 99px;
+}

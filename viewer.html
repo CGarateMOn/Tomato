@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Viewer</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="app">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h1 class="logo">TrainTrack</h1>
+        <nav>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="catalog.html">My Trainings</a>
+          <a href="#">Progress</a>
+          <a href="#">Settings</a>
+        </nav>
+      </aside>
+
+      <!-- Main content -->
+      <main class="main viewer-main">
+
+        <!-- Back button -->
+        <a href="catalog.html" class="back-link">← Back to Trainings</a>
+
+        <!-- PDF header -->
+        <div class="viewer-header">
+          <div class="viewer-header-info">
+            <p class="viewer-training-name">Fire Safety</p>
+            <h2 class="viewer-resource-title">Module 1 — Theory</h2>
+          </div>
+          <div class="viewer-actions">
+            <a href="#" class="btn btn--secondary" download>Download PDF</a>
+            <button class="btn btn--primary">Mark as Complete</button>
+          </div>
+        </div>
+
+        <!-- PDF embed -->
+        <div class="pdf-container">
+          <iframe
+            class="pdf-frame"
+            src="https://www.w3.org/WAI/WCAG21/Techniques/pdf/PDF1.pdf"
+            title="PDF Viewer"
+          ></iframe>
+        </div>
+
+      </main>
+    </div>
+
+  </body>
+</html>

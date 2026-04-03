@@ -280,3 +280,99 @@ nav a:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
+
+/* ── Viewer ── */
+.viewer-main {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 40px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 14px;
+  color: #1a2e4a;
+  text-decoration: none;
+  margin-bottom: 24px;
+  transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+  opacity: 0.6;
+}
+
+/* ── Viewer header ── */
+.viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.viewer-training-name {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.viewer-resource-title {
+  font-size: 24px;
+  color: #1a1a1a;
+}
+
+/* ── Viewer action buttons ── */
+.viewer-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 99px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn--primary {
+  background-color: #1a2e4a;
+  color: #ffffff;
+}
+
+.btn--primary:hover {
+  background-color: #24406a;
+}
+
+.btn--secondary {
+  background-color: #ffffff;
+  color: #1a2e4a;
+  border: 1px solid #e0e0e0;
+}
+
+.btn--secondary:hover {
+  border-color: #1a2e4a;
+}
+
+/* ── PDF container ── */
+.pdf-container {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-height: 0;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

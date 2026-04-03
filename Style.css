@@ -376,3 +376,13 @@ nav a:hover {
   height: 100%;
   border: none;
 }
+
+/* ── Complete button states ── */
+.btn--done {
+  background-color: #2d7a3a;
+  color: #ffffff;
+}
+
+.btn--done:hover {
+  background-color: #246a30;
+}

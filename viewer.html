@@ -36,7 +36,7 @@
           </div>
           <div class="viewer-actions">
             <a href="#" class="btn btn--secondary" download>Download PDF</a>
-            <button class="btn btn--primary">Mark as Complete</button>
+            <button class="btn btn--primary" id="completeBtn">Mark as Complete</button>
           </div>
         </div>
 
@@ -52,5 +52,28 @@
       </main>
     </div>
 
+    <script>
+  const completeBtn = document.getElementById('completeBtn');
+
+  // Track whether this resource is marked complete
+  let isComplete = false;
+
+  completeBtn.addEventListener('click', function() {
+
+    // Flip the state
+    isComplete = !isComplete;
+
+    if (isComplete) {
+      completeBtn.textContent = '✓ Completed';
+      completeBtn.classList.remove('btn--primary');
+      completeBtn.classList.add('btn--done');
+    } else {
+      completeBtn.textContent = 'Mark as Complete';
+      completeBtn.classList.remove('btn--done');
+      completeBtn.classList.add('btn--primary');
+    }
+
+  });
+</script>
   </body>
 </html>

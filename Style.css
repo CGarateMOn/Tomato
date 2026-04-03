@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: Georgia, serif;
-    background-color: #f4f1ee;
-    color: #1a1a1a
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f4f1ee;
+  color: #1a1a1a;
 }
 
 .app{
@@ -25,9 +25,10 @@ body{
     gap: 40px;
 }
 
-.logo{
-    font-size: 22px;
-    letter-spacing: 1px;
+.logo {
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-family: 'DM Serif Display', serif;
 }
 
 nav{
@@ -36,14 +37,25 @@ nav{
     gap: 16px;
 }
 
+nav a.active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
 nav a {
   color: #ffffffaa;
   text-decoration: none;
   font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
 }
 
 nav a:hover {
   color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 /* ── Main content ── */
@@ -165,4 +177,30 @@ nav a:hover {
   height: 100%;
   background-color: #1a2e4a;
   border-radius: 99px;
+}
+
+/* ── Card interactions ── */
+.summary-card,
+.training-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.summary-card:hover,
+.training-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Progress fill color by status ── */
+.progress-fill--completed {
+  background-color: #2d7a3a;
+}
+
+.progress-fill--progress {
+  background-color: #e8a020;
+}
+
+.progress-fill--notstarted {
+  background-color: #cccccc;
 }

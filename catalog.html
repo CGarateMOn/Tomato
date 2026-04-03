@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Catalog</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="app">
+
+      <aside class="sidebar">
+        <h1 class="logo">Mandatory Training</h1>
+        <nav>
+          <a href="Dashboard.html">Dashboard</a>
+          <a href="catalog.html" class="active">My Trainings</a>
+          <a href="#">Progress</a>
+          <a href="#">Settings</a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h2>Training Catalog</h2>
+          <p>Browse and track all your mandatory trainings.</p>
+        </header>
+
+        <div class="catalog-controls">
+
+          <div class="filter-buttons">
+            <button class="filter-btn filter-btn--active">All</button>
+            <button class="filter-btn">Not Started</button>
+            <button class="filter-btn">In Progress</button>
+            <button class="filter-btn">Completed</button>
+          </div>
+
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search trainings..."
+          />
+
+        </div>
+
+        <div class="catalog-grid">
+
+          <div class="catalog-card">
+            <div class="training-header">
+              <h3>STM 32 fundamentals</h3>
+              <span class="badge badge--completed">Completed</span>
+            </div>
+            <p class="training-meta">4 modules · Due Jan 15</p>
+            <div class="progress-bar">
+              <div class="progress-fill progress-fill--completed" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="catalog-card">
+            <div class="training-header">
+              <h3>CAN fundamentals</h3>
+              <span class="badge badge--progress">In Progress</span>
+            </div>
+            <p class="training-meta">6 modules · Due Feb 3</p>
+            <div class="progress-bar">
+              <div class="progress-fill progress-fill--progress" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="catalog-card">
+            <div class="training-header">
+              <h3>ROS 2 fundamentals</h3>
+              <span class="badge badge--notstarted">Not Started</span>
+            </div>
+            <p class="training-meta">3 modules · Due Mar 10</p>
+            <div class="progress-bar">
+              <div class="progress-fill progress-fill--notstarted" style="width: 0%"></div>
+            </div>
+          </div>
+
+          <div class="catalog-card">
+            <div class="training-header">
+              <h3>Integration circuits fundamentals</h3>
+              <span class="badge badge--progress">In Progress</span>
+            </div>
+            <p class="training-meta">5 modules · Due Feb 20</p>
+            <div class="progress-bar">
+              <div class="progress-fill progress-fill--progress" style="width: 40%"></div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>

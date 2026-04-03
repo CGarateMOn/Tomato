@@ -204,3 +204,79 @@ nav a:hover {
 .progress-fill--notstarted {
   background-color: #cccccc;
 }
+
+/* ── Catalog controls ── */
+.catalog-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 99px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: #1a2e4a;
+  color: #1a2e4a;
+}
+
+.filter-btn--active {
+  background-color: #1a2e4a;
+  color: #ffffff;
+  border-color: #1a2e4a;
+}
+
+/* ── Search input ── */
+.search-input {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 99px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a1a;
+  outline: none;
+  width: 220px;
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #1a2e4a;
+}
+
+/* ── Catalog grid ── */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ── Catalog card ── */
+.catalog-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.catalog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
